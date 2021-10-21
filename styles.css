@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #22223b;
+  --primary-color: #003049;
   --secondary-color: #9a8c98;
   --border-color: #4a4e69;
-  --background-color: #c9ada7;
+  --background-color: #ffddd2;
 }
 * {
   margin: 0;
@@ -85,9 +85,9 @@ input[type="text"] {
 }
 .btn:hover {
   cursor: pointer;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: 2px solid var(--border-color);
 }
 
 .modal {
@@ -98,21 +98,19 @@ input[type="text"] {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   margin: 15% auto;
   padding: 20px;
   border: 2px solid var(--border-color);
   border-radius: 1rem;
   width: 500px;
   text-align: center;
-  color: var(--secondary-color);
-  -webkit-backdrop-filter: blur(10px);
+  color: var(--primary-color);
   backdrop-filter: blur(10px);
 }
 
@@ -135,6 +133,7 @@ input[type="text"] {
 }
 .social a {
   color: var(--border-color);
+  font-size: x-large;
 }
 .social ul {
   list-style: none;
